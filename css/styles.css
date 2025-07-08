@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,body,
+h6,p,a,ol,ul,li,div{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.box {
+  width: 400px;
+  height: 830px;
+  position: relative;
+  background: gray;
+  align-items: center;
+  transform: translateX(-75%);
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.box:hover{
+  transform: translateX(0);
+}
+.box:hover .text{
+  color: gray;
+}
+.text{
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 377px;
+    left: 283px;
+    transform: rotate(90deg);
+    font-size: 20px;
+    transition-property: color;
+    transition-duration: 500ms;
+}
+.square{
+    width: 15px;
+    height: 15px;
+    background-color: orange;
+    outline: 2px solid black;
+    transform: rotate(45deg);
+}
+.item:first-child{
+  display: flex;
+  column-gap: 15px;
+  padding-top: 20%;
+  margin-left: 80px;
+}
+.item{
+    display: flex;
+    column-gap: 15px;
+    margin-bottom: 7%;
+    margin-left: 80px;
+}
+.item:last-child{
+    display: flex;
+    column-gap: 15px;
+    margin-left: 80px;
+}
+.link{
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    transition-property: color;
+    transition-duration: 500ms;
+}
+.link:hover{
+    color: orange;
+}
